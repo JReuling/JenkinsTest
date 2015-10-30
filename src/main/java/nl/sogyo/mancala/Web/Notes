@@ -1,0 +1,49 @@
+Use "addIntHeader" to create a Header in the get/post where the value is an int corresponding to the pit number of the calling button.
+No need to do the above, the HTML tag has a value field where this could be done. The input is then received as buttonName=Value. Might have its own header though.
+Use "sessionID" to determine whether or not a new request belongs to someone that was already playing.
+This is necessary since every new request would open a new connection, or at least a new handler.
+
+Button text can be changed by JavaScript perhaps by using the onClick = "function()" syntax and changing .innerHTML in that function.
+
+Set HTML button method to "post"
+Kind of like this:
+<form method = "POST">
+  <input type="submit" value="Submit">
+</form>
+
+Is it possible to have a JavaScript "Adapter"?
+So the process would be:
+Open Webpage -> GET request
+GET Request -> Build page
+JavaScript runs -> starts game //Only imports needed are Game and Board in that case right?
+onClick event: JavaScript calls play on a pit, updates all buttons.
+onClick calls a function, the actual changing is done using "ElementById", so updating all when one is clicked should be possible.
+
+UI should be JavaScript in this case. (or well, HTML)
+
+<script>
+document.getElementById("myBtn").addEventListener("click", testFunction);
+function testFunction(){
+alert("It works!");
+}
+</script>
+
+JavaScript continues to work even after the server is stopped => it runs client side.
+
+Using AJAX it is possible to create JavaScript thingies that call upon server functions in synchronous and asynchronous fashion and read the result.
+Like this:
+
+<p id="demo">Let AJAX change this text.</p>
+
+<button type="button" onclick="loadDoc()">Change Content</button>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "ajax_info.txt", false);
+  xhttp.send();
+  document.getElementById("demo").innerHTML = xhttp.responseText;
+}
+</script>
+
+Server response is in php? (or well, it could be) as in: echo $hint === "" ? "no suggestion" : $hint; where xhtmlthingie.responseText returns hint or no suggestion.

@@ -1,0 +1,32 @@
+//       "<button id=\"buttonTest\" type=\"button\" onclick=\"changeText()\">Click Me!</button>" +
+//                    "<p>This example uses the addEventListener() method to attach a click event to a button.</p>" +
+//                    "<button id=\"myBtn\">Try it</button>" +
+//                    "<p id=\"demo\">Let AJAX change this text.</p>" +
+//                    "<button type=\"button\" onclick=\"loadDoc()\">Change Content</button>" +
+//                    "<script>" +
+//                    "document.getElementById(\"myBtn\").addEventListener(\"click\", testFunction);" +
+//                    "function testFunction(){" +
+//                    "alert(\"It works!\");" +
+//                    "}" +
+//                    "function changeText(){" +
+//                    "document.getElementById(\"buttonTest\").innerHTML = \"I have been clicked\";}"+
+//                    "function loadDoc(){" +
+//                    "var xhttp = new XMLHttpRequest();" +
+//                    "xhttp.open(\"POST\", \"/playedPit\", false);" +
+//                    "xhttp.send();" +
+//                    "document.getElementById(\"demo\").innerHTML = xhttp.responseText" +
+//                    "}" +
+//                    "</script>";
+
+<button id ="Pit1">4</button>
+<button id ="Pit2">4</button>
+<button id ="Pit3">4</button>
+<button id ="Pit4">4</button>
+<button id ="Pit5">4</button>
+<button id ="Pit6">4</button>
+<button id ="Pit8">4</button>
+<button id ="Pit9">4</button>
+<button id ="Pit10">4</button>
+<button id ="Pit11">4</button>
+<button id ="Pit12">4</button>
+<button id ="Pit13">4</button>
