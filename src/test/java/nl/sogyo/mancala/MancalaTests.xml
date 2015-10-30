@@ -22,5 +22,5 @@
 		<testcase name = "testPlayV2"/>
 		<testcase name = "testCaptureByPlayer2"/>
 		<testcase name = "testEmptyPitPlayer2PlayByPlayer1"/>
-	</testuite>
+	</testsuite>
 </testsuites>
