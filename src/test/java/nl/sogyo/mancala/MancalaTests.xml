@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<testsuites "schemaLocation = JUnitTests.xsd">
+<testsuites>
 	<testsuite
 		name = "C:\Users\jreuling@sogyo.nl\mancala\src\test\java\nl\sogyo\mancala\KalahaTest.java"
 		tests = "4">
